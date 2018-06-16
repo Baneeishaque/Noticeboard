@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Notice Board</string>
+    <string name="action_settings">Settings</string>
+    <string name="select_category">SELECT A CATEGORY</string>
+
+    <string-array name="category">
+        <item>GENERAL</item>
+        <item>HOSTEL</item>
+        <item>CSE</item>
+        <item>IT</item>
+        <item>CIVIL</item>
+        <item>AEI</item>
+        <item>MECH</item>
+        <item>EEE</item>
+        <item>ECE</item>
+        <item>B.ARCH</item>
+    </string-array>
+
+    <string name="title_activity_scnd">Scnd</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_notice_board1">NoticeBoard1</string>
+    <string name="title_activity_notice_board2">NoticeBoard2</string>
+    <string name="title_activity_set_ip">Notice Board</string>
+
+</resources>

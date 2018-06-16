@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.noticeboard"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.noticeboard.NoticeBoard"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.noticeboard.NoticeBoard1"
+            android:label="@string/title_activity_notice_board1"
+            android:parentActivityName="com.noticeboard.NoticeBoard" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.noticeboard.NoticeBoard" />
+        </activity>
+        <activity
+            android:name="com.noticeboard.NoticeBoard2"
+            android:label="@string/title_activity_notice_board2"
+            android:parentActivityName="com.noticeboard.NoticeBoard1" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.noticeboard.NoticeBoard1" />
+        </activity>
+        <activity
+            android:name="com.noticeboard.SetIp"
+            android:label="@string/title_activity_set_ip" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+    </application>
+
+</manifest>
